@@ -16,13 +16,16 @@
 
   --PrimaryColor:#3B83BD;
   --DefaulTextColor:#2E2E2E;
+  --BackgroundColor: #ffffff;
+  --WhiteTextColor: #f1f1f1;
+  --TextColor: #004289
 }
 
 
 
 /*******************************************/
 body {
-  background: var(--DefaulTextColor);;
+  background: var(--BackgroundColor);;
   color: var(--DefaulTextColor);
   font-family: "Open Sans", sans-serif;
 }
@@ -55,6 +58,10 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+h5 {
+  font-size: 1.0rem;
 }
 
 /* Back to top button */
@@ -142,7 +149,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: var(--DefaulTextColor);
+  background: var(--BackgroundColor);
   color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
@@ -277,7 +284,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #fbfbfb;
+  color: var(--TextColor);
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -603,6 +610,10 @@ h6 {
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
+#services .row .center {
+  margin: 0 auto;
+}
+
 #services .box {
   padding: 30px;
   position: relative;
@@ -612,6 +623,10 @@ h6 {
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #services .box:hover {
@@ -620,15 +635,17 @@ h6 {
 }
 
 #services .icon {
-  position: absolute;
+  /* position: absolute; */
   left: -10px;
   top: calc(50% - 32px);
+
 }
 
 #services .icon i {
   font-size: 64px;
   line-height: 1;
   transition: 0.5s;
+  margin: 20px;
 }
 
 #services .title {
@@ -1352,6 +1369,16 @@ h6 {
 }
 
 @media (max-width: 991px) {
+
+
+  #clients {
+    display: none;
+  }
+
+  #header .logo {
+    float: none;
+  }
+
   #header {
     height: 60px;
     padding: 10px 0;
