@@ -22,7 +22,7 @@
 
 /*******************************************/
 body {
-  background: var(--PrimaryColor);
+  background: var(--DefaulTextColor);;
   color: var(--DefaulTextColor);
   font-family: "Open Sans", sans-serif;
 }
@@ -142,7 +142,8 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: #fff;
+  background: var(--DefaulTextColor);
+  color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
@@ -164,7 +165,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #00366f;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -276,7 +277,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: var(--DefaulTextColor);
+  color: #fbfbfb;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
