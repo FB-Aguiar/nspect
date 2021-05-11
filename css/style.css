@@ -35,6 +35,8 @@ a {
   transition: 0.5s;
 }
 
+
+
 a:hover,
 a:active,
 a:focus {
@@ -631,6 +633,7 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 222px;
 }
 
 #services .box:hover {
@@ -1370,6 +1373,10 @@ h5 {
   #testimonials .testimonial-item p {
     width: 80%;
   }
+
+  /* .container {
+    padding: 0; 
+  } */
 }
 
 @media (max-width: 991px) {
@@ -1388,7 +1395,7 @@ h5 {
   }
 
   #intro {
-    padding: 140px 0 60px 0;
+    padding: 50px 0;
   }
 
   #intro .intro-img {
@@ -1407,12 +1414,21 @@ h5 {
   #why-us .card {
     margin: 0;
   }
+
+  /* .container {
+    padding: 0; 
+  } */
 }
 
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
   }
+
+  /* .container {
+    padding: 0; 
+    margin: 0 auto;
+  } */
 }
 
 @media (max-width: 767px) {
@@ -1443,10 +1459,19 @@ h5 {
   #testimonials .testimonial-item p {
     margin-left: 0;
   }
+
+  #intro {
+    padding: 0;
+    margin: 0;
+  }
+  
 }
 
 @media (max-width: 574px) {
   #intro {
-    padding: 100px 0 20px 0;
+    padding: 0;
+    margin: 0;
   }
+
+
 }
