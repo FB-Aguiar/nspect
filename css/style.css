@@ -25,7 +25,10 @@
 
 /*******************************************/
 body {
-  background: var(--BackgroundColor);;
+  background: #f5f5f5;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-size: inherit;
   color: var(--DefaulTextColor);
   font-family: "Open Sans", sans-serif;
 }
@@ -35,8 +38,10 @@ a {
   transition: 0.5s;
 }
 
-
-
+.containerPrincipal{
+  padding: 40px;
+  background-color: #fff;
+}
 a:hover,
 a:active,
 a:focus {
@@ -151,7 +156,7 @@ h5 {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: var(--BackgroundColor);
+  background-color: #fff;
   color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
@@ -188,26 +193,43 @@ h5 {
   margin-top: 60px;
 }
 
+
+.carousel-item img{
+  height: 600px;
+}
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
 #intro {
+  margin-top: 80px;
   width: 100%;
   position: relative;
-  /* background: url("../img/intro-bg.png") center bottom no-repeat; */
+  
   background-size: cover;
   padding: 10px 0 10px 0;
+  color: #fff;
+}
+
+.introBack{
+  background: url("../img/CARROSEEL.jpg") center bottom no-repeat; 
+  background-position: bottom;
 }
 
 #intro .intro-img {
   width: 50%;
   float: right;
+  filter: none;
+  text-shadow: 1px 1px 10px 1px #000;
 }
 
 #intro .intro-info {
-  width: 50%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   float: left;
+  align-items: center;
+  text-shadow: 0px 2px 0px #000;
 }
 
 #intro .intro-info h2 {
@@ -509,7 +531,7 @@ h5 {
 --------------------------------*/
 
 #about {
-  background: #fff;
+;
   padding: 60px 0;
 }
 
@@ -1432,8 +1454,14 @@ h5 {
 }
 
 @media (max-width: 767px) {
+  
+  .carousel-item img{
+    height: 300px;
+  }
   #intro .intro-info {
     width: 100%;
+    padding: 10px;
+    float: left;
   }
 
   #intro .intro-info h2 {
@@ -1462,16 +1490,18 @@ h5 {
 
   #intro {
     padding: 0;
-    margin: 0;
+    margin:  60px 0px 0px 0px;;
   }
   
 }
 
 @media (max-width: 574px) {
+  .carousel-item img{
+    height: 400px;
+  }
   #intro {
     padding: 0;
-    margin: 0;
-  }
+    margin: 60px 0px 0px 0px;
 
 
 }
