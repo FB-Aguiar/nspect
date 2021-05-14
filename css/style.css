@@ -1067,6 +1067,25 @@ h5 {
   margin: 0 2px;
 }
 
+/* Faixa Contato 
+--------------------------------*/
+.faixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 140px;
+  background-color: #004a99;
+}
+
+.faixa .content {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
 /* Clients Section
 --------------------------------*/
 
