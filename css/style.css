@@ -155,7 +155,7 @@ h5 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   background-color: #fff;
   color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
@@ -186,7 +186,7 @@ h5 {
 #header .logo img {
   padding: 0;
   margin: 7px 0;
-  max-height: 26px;
+  max-height: 70px;
 }
 
 .main-pages {
@@ -294,7 +294,7 @@ h5 {
 .main-nav,
 .main-nav * {
   margin: 0;
-  padding: 0;
+  padding: 8px 0px 0px 0px;
   list-style: none;
   
 }
@@ -1411,7 +1411,7 @@ h5 {
   }
 
   #header {
-    height: 60px;
+    height: 100px;
     padding: 10px 0;
   }
 
@@ -1505,7 +1505,7 @@ h5 {
   }
   #intro {
     padding: 0;
-    margin: 60px 0px 0px 0px;
+    margin: 90px 0px 0px 0px;
 
 
 }
