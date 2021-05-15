@@ -15,16 +15,17 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'br972.hostgator.com.br';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Host       = 'inspeect.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;  
+    $mail->SMTPSecure = 'ssl';                                 //Enable SMTP authentication
     $mail->Username   = 'noreply@inspeect.com';                     //SMTP username
-    $mail->Password   = 'noreply1804*';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Password   = 'noreply1804*';         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom('noreply@inspeect.com', 'Inspect Consultoria');
-    $mail->addAddress('rodolfo.silva.belo@gmail.com');     //Add a recipient
+    $mail->addAddress('comercial@inspeect.com');  
+    // $mail->addAddress('fabriciotcn@gmail.com');    //Add a recipient
     // $mail->addReplyTo('fabriciotcn@gmail.com');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
@@ -41,7 +42,12 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
+    $message = "Email enviado com sucesso!";
+    echo "<script type='text/javascript'>alert('$message');
+    window.location.href = 'http://www.inspeect.com';
+    </script>";
 
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  echo "<script type='text/javascript'>alert('Erro ao enviar e-mail');
+  </script>";
 }

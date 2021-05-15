@@ -1238,11 +1238,13 @@ h5 {
   margin-bottom: 15px;
 }
 
+
 #contact .form #sendmessage.show,
 #contact .form #errormessage.show,
 #contact .form .show {
-  display: block;
+  display: none;
 }
+
 
 #contact .form .validation {
   color: red;
