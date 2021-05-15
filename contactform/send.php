@@ -44,10 +44,10 @@ try {
     $mail->send();
     $message = "Email enviado com sucesso!";
     echo "<script type='text/javascript'>alert('$message');
-    window.location.href = 'http://www.inspeect.com';
+    window.location.href = 'https://www.inspeect.com';
     </script>";
 
+
 } catch (Exception $e) {
-  echo "<script type='text/javascript'>alert('Erro ao enviar e-mail');
-  </script>";
+  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
