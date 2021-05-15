@@ -219,6 +219,17 @@ h5 {
   margin: 0 auto;
 }
 
+.faixa .row,
+.faixa a{
+  text-align: center;
+  justify-content: center;
+}
+
+.faixa h4{
+  white-space: nowrap;
+  margin-right: 10px;
+  
+}
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
